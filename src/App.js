@@ -4,6 +4,7 @@ import Dashboard from "./Dashboard/Dashboard";
 import Workload from "./Workload/Workload";
 import Header from "./Base/Header";
 import Sidebar from "./Base/Sidebar";
+import Cluster from "./Cluster/Cluster";
 
 export default function App() {
   const [isAuth, setIsAuth] = useState(true);
@@ -21,6 +22,7 @@ export default function App() {
         <Routes>
           <Route path="" element={<Dashboard />} />
           <Route path="/workload" element={<Workload />} />
+          <Route path="/cluster" element={<Cluster />} />
         </Routes>
       </div>
     </>

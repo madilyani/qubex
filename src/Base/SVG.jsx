@@ -166,3 +166,84 @@ export const chevronLeft = (
     />
   </svg>
 );
+export const filterIcon = (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+    <g clip-path="url(#clip0_1_59)">
+      <path d="M7 11L5 13L3 11" fill="currentColor" />
+      <path
+        d="M7 11L5 13L3 11"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M5 3V13V3Z" fill="currentColor" />
+      <path
+        d="M5 3V13"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M9 5L11 3L13 5" fill="currentColor" />
+      <path
+        d="M9 5L11 3L13 5"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M11 13V3V13Z" fill="currentColor" />
+      <path
+        d="M11 13V3"
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1_59">
+        <rect width="16" height="16" fill="currentColor" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+export const arrowRight = (
+  <svg width="12" height="6" viewBox="0 0 12 6" fill="none">
+    <path d="M9 1L11 3L9 5" fill="url(#paint0_linear_1_145)" />
+    <path
+      d="M9 1L11 3L9 5"
+      stroke="#A9A9A9"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path d="M1 3L11 3L1 3Z" fill="url(#paint1_linear_1_145)" />
+    <path
+      d="M1 3L11 3"
+      stroke="#A9A9A9"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <defs>
+      <linearGradient
+        id="paint0_linear_1_145"
+        x1="11"
+        y1="3"
+        x2="9"
+        y2="3"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#051922" stop-opacity="0.29" />
+        <stop offset="1" stop-color="#051922" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_1_145"
+        x1="11"
+        y1="3.5"
+        x2="1"
+        y2="3.5"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#051922" stop-opacity="0.29" />
+        <stop offset="1" stop-color="#051922" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
