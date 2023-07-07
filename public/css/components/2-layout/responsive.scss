@@ -12,3 +12,34 @@
   // base end
 }
 // 1460px
+@include xxxlg-xxxxlg {
+  // workload start
+  @include workload-xxxlg-xxxxlg;
+  // workload end
+}
+// 1340px
+@include xxlg-xxxlg {
+  // workload start
+  @include workload-xxlg-xxxlg;
+  // workload end
+}
+// 1240px
+@include xlg-xxlg {
+  // base start
+  .auto__container {
+    padding: 0 16px;
+  }
+  // base end
+  // workload start
+  @include workload-xlg-xxlg;
+  // workload end
+}
+// 1024px
+@include lg-xlg {
+  .sidebar {
+    display: none;
+  }
+  .wrapper {
+    padding: 50px 0 30px 0;
+  }
+}
