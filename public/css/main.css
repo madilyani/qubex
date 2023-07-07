@@ -95,3 +95,108 @@ h2 {
   line-height: 36px;
   color: #fefdfc;
 }
+
+.workload h2 {
+  margin-bottom: 96px;
+}
+.workload__inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.workload__info {
+  margin-top: 24px;
+  width: 150px;
+  border-radius: 12px;
+  background: #202020;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.workload__info-text {
+  padding: 4px 0 4px 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 16px;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fefdfc;
+  position: relative;
+}
+.workload__info-text:last-child {
+  margin-bottom: 0;
+}
+.workload__info-text::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-ransform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  left: 0px;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.workload__info-text.orange::before {
+  background: #e5964d;
+}
+.workload__info-text.blue::before {
+  background: #4579ff;
+}
+.workload__info-text.gray::before {
+  background: #9a9abb;
+}
+.workload__info-text.purple::before {
+  background: #6a60e4;
+}
+.workload__content {
+  width: calc(100% - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.workload__current {
+  width: calc(52% - 4px);
+}
+.workload__current-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.workload__current-inner {
+  border-radius: 16px;
+  background: #202020;
+  height: calc(100% - 24px);
+}
+.workload__turbo {
+  width: calc(48% - 4px);
+}
+.workload__turbo-title {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.workload__turbo-inner {
+  border-radius: 16px;
+  background: #202020;
+  height: calc(100% - 24px);
+}

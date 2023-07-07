@@ -14,8 +14,8 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="" element={<Dashboard />} />
-        <Route path="/workload" element={<Workload />} />
+        {/* <Route path="" element={<Dashboard />} /> */}
+        <Route path="" element={<Workload />} />
       </Routes>
     </>
   );
