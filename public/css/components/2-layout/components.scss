@@ -28,6 +28,12 @@ h6 {
     z-index: 1;
     cursor: pointer;
     opacity: 0;
+    &:checked + label {
+      &::before {
+        border: 2px solid $purple;
+        background: $purple;
+      }
+    }
   }
   label {
     font-weight: 400;
@@ -37,6 +43,7 @@ h6 {
     position: relative;
     display: flex;
     align-items: center;
+    padding-left: 24px;
     &::before {
       width: 18px;
       height: 18px;
@@ -52,7 +59,7 @@ h6 {
       position: absolute;
       content: "";
       border-bottom: 2px solid $white;
-      border-right: 2px solid ;
+      border-right: 2px solid;
     }
     span {
       box-sizing: border-box;
