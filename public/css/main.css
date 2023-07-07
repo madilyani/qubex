@@ -124,6 +124,10 @@ h6.upper {
   cursor: pointer;
   opacity: 0;
 }
+.check input:checked + label::before {
+  border: 2px solid #6a60e4;
+  background: #6a60e4;
+}
 .check label {
   font-weight: 400;
   font-size: 14px;
@@ -136,6 +140,7 @@ h6.upper {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 24px;
 }
 .check label::before {
   width: 18px;
