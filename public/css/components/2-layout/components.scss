@@ -33,6 +33,9 @@ h6 {
         border: 2px solid $purple;
         background: $purple;
       }
+      &::after {
+        opacity: 1;
+      }
     }
   }
   label {
@@ -53,13 +56,20 @@ h6 {
       content: "";
       top: 50%;
       left: 0;
+      @include transition;
       @include transformY;
     }
     &::after {
+      @include transition;
       position: absolute;
       content: "";
+      opacity: 0;
       border-bottom: 2px solid $white;
-      border-right: 2px solid;
+      border-right: 2px solid $white;
+      width: 4px;
+      left: 7px;
+      height: 8px;
+      transform: translateY(calc(50% - 4px)) rotate(45deg);
     }
     span {
       box-sizing: border-box;
