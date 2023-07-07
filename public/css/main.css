@@ -316,3 +316,19 @@ h2 {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.dash {
+  padding: 14px 0;
+}
+.dash h1 {
+  margin-bottom: 20px;
+}
+.dash__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -12px;
+}
+.dash__col {
+  margin: 0 12px;
+}

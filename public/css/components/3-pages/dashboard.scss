@@ -1,0 +1,13 @@
+.dash {
+  padding: 14px 0;
+  h1 {
+    margin-bottom: 20px;
+  }
+  &__row {
+    display: flex;
+    margin: 0 -12px;
+  }
+  &__col {
+    margin: 0 12px;
+  }
+}
