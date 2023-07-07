@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Dashboard from "./Dashboard/Dashboard";
+import Workload from "./Workload/Workload";
 
 export default function App() {
   const [isAuth, setIsAuth] = useState(true);
@@ -13,7 +14,8 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="" element={<Dashboard setIsAuth={setIsAuth} />} />
+        <Route path="" element={<Dashboard />} />
+        <Route path="/workload" element={<Workload />} />
       </Routes>
     </>
   );
