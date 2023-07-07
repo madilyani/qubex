@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import CpuChart from "./CpuChart";
+import GibChart from "./GibChart";
 
 export default function Charts() {
   const [isActive, setIsActive] = useState("24-hours");
@@ -28,7 +30,7 @@ export default function Charts() {
             30 Days
           </button>
         </div>
-        <div className="charts__check">
+        <div className="charts__checks">
           <div className="check">
             <input type="checkbox" />
             <label htmlFor="">
@@ -54,6 +56,12 @@ export default function Charts() {
             </label>
           </div>
         </div>
+      </div>
+      <div className="charts__body">
+        <h6 className="semiTitle">CPU Utilization</h6>
+        <CpuChart />
+        <h6 className="semiTitle">Memory Utilization</h6>
+        <GibChart />
       </div>
     </div>
   );
