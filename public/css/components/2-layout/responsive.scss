@@ -36,10 +36,12 @@
 }
 // 1024px
 @include lg-xlg {
-  .sidebar {
-    display: none;
-  }
+  // base start
+  @include header-lg-xlg;
+  @include nav-lg-xlg;
+  @include sidebar-lg-xlg;
   .wrapper {
-    padding: 50px 0 30px 0;
+    padding: 64px 0 0 0;
   }
+  // base end
 }

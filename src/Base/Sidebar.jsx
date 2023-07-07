@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+  accountIcon,
   chevronBottom,
   clusterIcon,
   containerIcon,
@@ -8,10 +9,13 @@ import {
 } from "./SVG";
 import { Link, NavLink } from "react-router-dom";
 
-export default function Sidebar() {
+export default function Sidebar({ menu, setMenu }) {
   const [isShow, setIsShow] = useState(false);
+  const onClose = (e) => {
+    if (e.target === e.currentTarget) setMenu(false);
+  };
   return (
-    <div className="sidebar">
+    <div className={"sidebar " + (menu ? "active" : "")} onClick={onClose}>
       <div className="sidebar__inner">
         <div className="sidebar__head">
           <div className="sidebar__head-logo">
@@ -58,6 +62,20 @@ export default function Sidebar() {
               Reaction time
             </span>
           </Link>
+          <div className="sidebar__mobile">
+            <Link to="/" className="sidebar__link">
+              {nodeIcon} <span>Documentation</span>
+            </Link>
+            <Link to="/" className="sidebar__link">
+              {nodeIcon} <span>API</span>
+            </Link>
+            <Link to="/" className="sidebar__link">
+              {nodeIcon} <span>Help</span>
+            </Link>
+            <Link to="/" className="sidebar__link">
+              {accountIcon} <span>AlonYariv</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
