@@ -1515,6 +1515,9 @@ h6.upper {
   height: 6px;
   margin: 0 4px;
 }
+.cluster__table-text span {
+  color: #9b93ff;
+}
 .cluster__table table {
   width: 100%;
   border-collapse: collapse;
