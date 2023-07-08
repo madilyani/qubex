@@ -1,0 +1,123 @@
+.cluster {
+  h2 {
+    margin-bottom: 56px;
+  }
+  &__table {
+    max-width: 1180px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 0px 0px rgba(135, 135, 135, 0.1),
+      0px -18px 39px 0px rgba(135, 135, 135, 0.1),
+      0px -71px 71px 0px rgba(135, 135, 135, 0.09),
+      0px -159px 95px 0px rgba(135, 135, 135, 0.05),
+      0px -282px 113px 0px rgba(135, 135, 135, 0.01),
+      0px -441px 123px 0px rgba(135, 135, 135, 0);
+    border-radius: 16px;
+    &-filter {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      svg {
+        width: 16px;
+        height: 16px;
+        color: $white;
+        margin-left: 6px;
+      }
+    }
+    &-prog {
+      padding: 1px 8px 4px 0;
+      box-sizing: border-box;
+      &-text {
+        margin-bottom: 1px;
+      }
+      &-progress {
+        width: 100%;
+        background: #fefdfc;
+        border-radius: 2px;
+        position: relative;
+        height: 4px;
+        overflow: hidden;
+        span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 2px;
+          height: 100%;
+          background: #6a60e4;
+          z-index: 1;
+        }
+      }
+    }
+    &-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        width: 12px;
+        height: 6px;
+        margin: 0 4px;
+      }
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th {
+      padding: 12px 16px 13px 16px;
+      border-left: 1px solid rgba(51, 51, 51, 0.6);
+      background: $black;
+      text-align: left;
+      font-family: $mainFont;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $white;
+      &:first-child {
+        border-radius: 16px 0px 0px 0px;
+        border: unset;
+      }
+      &:last-child {
+        border-radius: 0px 16px 0px 0px;
+        border: unset;
+      }
+    }
+    td {
+      padding: 7px 16px;
+      background: rgba(51, 51, 51, 0.6);
+      font-family: $mainFont;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 18px;
+      color: $white;
+      p {
+        max-width: 170px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+      &:nth-child(4) {
+        text-align: center;
+      }
+      &:nth-child(5) {
+        text-align: center;
+      }
+      &:nth-child(6) {
+        text-align: center;
+      }
+    }
+    tr {
+      &:last-child {
+        td {
+          padding: 7px 16px 20px 16px;
+          &:first-child {
+            border-radius: 0 0 0 16px;
+          }
+          &:last-child {
+            border-radius: 0 0 16px 0;
+          }
+        }
+      }
+    }
+  }
+}
