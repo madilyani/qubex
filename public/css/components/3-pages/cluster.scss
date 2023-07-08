@@ -30,7 +30,7 @@
         margin-bottom: 1px;
       }
       &-progress {
-        width: 100%;
+        width: 120px;
         background: #fefdfc;
         border-radius: 2px;
         position: relative;
@@ -55,6 +55,9 @@
         width: 12px;
         height: 6px;
         margin: 0 4px;
+      }
+      span {
+        color: #9b93ff;
       }
     }
     table {
