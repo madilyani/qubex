@@ -238,6 +238,9 @@ h6.upper {
   height: 20px;
   margin-right: 4px;
 }
+.nav__inner-link:hover {
+  color: #6a60e4;
+}
 .nav__inner-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1060,6 +1063,9 @@ h6.upper {
   width: 100%;
 }
 
+.workload {
+  padding: 16px 0;
+}
 .workload h2 {
   margin-bottom: 96px;
 }
@@ -1449,6 +1455,9 @@ h6.upper {
   height: 13px;
 }
 
+.cluster {
+  padding: 16px 0;
+}
 .cluster h2 {
   margin-bottom: 56px;
 }
@@ -1576,6 +1585,17 @@ h6.upper {
 .cluster__table tr:last-child td:last-child {
   border-radius: 0 0 16px 0;
 }
+.cluster .table {
+  width: 100%;
+  overflow-x: auto;
+}
+.cluster .table::-webkit-scrollbar {
+  display: none;
+}
+.cluster .table {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
 
 @media (max-width: 1620px) {
   h6 {
@@ -1641,6 +1661,13 @@ h6.upper {
   .workload__time-cont {
     padding: 5.5px 4px;
     font-size: 7px;
+  }
+  .cluster h2 {
+    margin-bottom: 30px;
+  }
+  .cluster__table th {
+    font-size: 12px;
+    white-space: nowrap;
   }
 }
 @media (max-width: 1340px) {
@@ -2004,9 +2031,16 @@ h6.upper {
   }
   .workload__current {
     width: 100%;
+    margin-bottom: 20px;
   }
   .workload__turbo {
     width: 100%;
+  }
+  .workload__turbo-right-box {
+    margin-bottom: 20px;
+  }
+  .workload__turbo-right::before {
+    height: 95%;
   }
 }
 @media (max-width: 700px) {
@@ -2036,6 +2070,9 @@ h6.upper {
     padding: 4px 4px 4px 14px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+  }
+  .cluster h2 {
+    margin-bottom: 16px;
   }
   .hard {
     -webkit-box-orient: vertical;

@@ -18,9 +18,9 @@ export default function Sidebar({ menu, setMenu }) {
     <div className={"sidebar " + (menu ? "active" : "")} onClick={onClose}>
       <div className="sidebar__inner">
         <div className="sidebar__head">
-          <div className="sidebar__head-logo">
+          <Link to="/" className="sidebar__head-logo">
             <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="logo" />
-          </div>
+          </Link>
           <Link to="" className="sidebar__link">
             {clusterIcon} <span>All clusters</span>
           </Link>
@@ -52,16 +52,16 @@ export default function Sidebar({ menu, setMenu }) {
               </div>
             )}
           </div>
-          <Link to="" className="sidebar__link">
-            {nodeIcon} <span>Node list</span>
-          </Link>
-          <Link to="" className="sidebar__link">
+          <NavLink to="/cluster" className="sidebar__link">
+            {nodeIcon} <span>Cluster</span>
+          </NavLink>
+          <NavLink to="/workload" className="sidebar__link">
             {nodeIcon}{" "}
             <span>
               Workload rightsizing <br />
               Reaction time
             </span>
-          </Link>
+          </NavLink>
           <div className="sidebar__mobile">
             <Link to="/" className="sidebar__link">
               {nodeIcon} <span>Documentation</span>

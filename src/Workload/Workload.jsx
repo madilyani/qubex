@@ -1,9 +1,16 @@
 import React from "react";
 import { chevronLeft, chevronRight } from "../Base/SVG";
+import { motion } from "framer-motion";
 
 export default function Workload() {
   return (
-    <div className="workload">
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2 }}
+      exit={{ opacity: 0, y: 15 }}
+      className="workload"
+    >
       <div className="auto__container">
         <div className="workload__inner">
           <h2>Workload-1</h2>
@@ -103,6 +110,6 @@ export default function Workload() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

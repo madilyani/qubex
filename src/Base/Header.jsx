@@ -7,9 +7,9 @@ export default function Header({ menu, setMenu }) {
     <div className="header">
       <div className="auto__container">
         <div className="header__inner">
-          <div className="header__inner-logo">
+          <Link to="/" className="header__inner-logo">
             <img src={process.env.PUBLIC_URL + "/images/logo.svg"} alt="logo" />
-          </div>
+          </Link>
           <div className="nav">
             <div className="nav__inner">
               <div className="nav__inner-links">

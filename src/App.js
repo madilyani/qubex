@@ -7,7 +7,6 @@ import Sidebar from "./Base/Sidebar";
 import Cluster from "./Cluster/Cluster";
 
 export default function App() {
-  const [isAuth, setIsAuth] = useState(true);
   const [menu, setMenu] = useState(false);
   const location = useLocation();
   useEffect(() => {
@@ -21,12 +20,6 @@ export default function App() {
     setMenu(false);
     document.body.classList.remove("active");
   }, [location]);
-  const appHeight = () => {
-    const doc = document.documentElement;
-    doc.style.setProperty("--app-height", `${window.innerHeight}px`);
-  };
-  window.addEventListener("resize", appHeight);
-  appHeight();
   return (
     <>
       <div className="wrapper">

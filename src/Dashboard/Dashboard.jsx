@@ -5,10 +5,17 @@ import Detail from "./components/Detail";
 import Cpu from "./components/Cpu";
 import Gib from "./components/Gib";
 import Charts from "./components/Charts/Charts";
+import { motion } from "framer-motion";
 
 export default function Dashboard() {
   return (
-    <div className="dash">
+    <motion.div
+      initial={{ opacity: 0, y: 15 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.2 }}
+      exit={{ opacity: 0, y: 15 }}
+      className="dash"
+    >
       <div className="auto__container">
         <div className="dash__inner">
           <h1>Dashboard</h1>
@@ -37,6 +44,6 @@ export default function Dashboard() {
           <Charts />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

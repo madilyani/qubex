@@ -1,4 +1,5 @@
 .cluster {
+  padding: 16px 0;
   h2 {
     margin-bottom: 56px;
   }
@@ -121,6 +122,37 @@
           }
         }
       }
+    }
+  }
+  .table {
+    width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    & {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+@mixin cluster-xxxlg-xxxxlg {
+  .cluster {
+    h2 {
+      margin-bottom: 30px;
+    }
+    &__table {
+      th {
+        font-size: 12px;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@mixin cluster-xsm-sm {
+  .cluster {
+    h2 {
+      margin-bottom: 16px;
     }
   }
 }

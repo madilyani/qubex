@@ -1,4 +1,6 @@
 .workload {
+  padding: 16px 0;
+
   h2 {
     margin-bottom: 96px;
   }
@@ -454,9 +456,19 @@
     }
     &__current {
       width: 100%;
+      margin-bottom: 20px;
     }
     &__turbo {
       width: 100%;
+
+      &-right {
+        &-box {
+          margin-bottom: 20px;
+        }
+        &::before {
+          height: 95%;
+        }
+      }
     }
   }
 }
