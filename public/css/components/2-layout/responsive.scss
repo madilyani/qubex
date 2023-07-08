@@ -13,12 +13,32 @@
 }
 // 1460px
 @include xxxlg-xxxxlg {
+  // dash start
+  .check {
+    label {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  // dash end
+
+  // dash start
+  @include dash-xxxlg-xxxxlg;
+  @include nodes-xxxlg-xxxxlg;
+  @include pods-xxxlg-xxxxlg;
+  @include charts-xxxlg-xxxxlg;
+  // dash end
   // workload start
   @include workload-xxxlg-xxxxlg;
   // workload end
 }
 // 1340px
 @include xxlg-xxxlg {
+  // dash start
+  @include detail-xxlg-xxxlg;
+  @include pods-xxlg-xxxlg;
+  @include hard-xxlg-xxxlg;
+  // dash end
   // workload start
   @include workload-xxlg-xxxlg;
   // workload end
@@ -30,6 +50,12 @@
     padding: 0 16px;
   }
   // base end
+  // dash start
+  @include dash-xlg-xxlg;
+
+  @include nodes-xlg-xxlg;
+  @include charts-xlg-xxlg;
+  // dash end
   // workload start
   @include workload-xlg-xxlg;
   // workload end
@@ -44,4 +70,36 @@
     padding: 64px 0 0 0;
   }
   // base end
+  // dash start
+  @include dash-lg-xlg;
+
+  // dash end
+}
+// 840px
+@include md-lg {
+  // dash start
+  @include charts-md-lg;
+  // dash end
+}
+// 700px
+@include sm-md {
+  // dash start
+  @include dash-sm-md;
+  // dash end
+}
+// 540px
+@include xsm-sm {
+  // base start
+  h1,
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  // base end
+
+  // dash start
+  @include hard-xsm-sm;
+  @include charts-xsm-sm;
+
+  // dash end
 }

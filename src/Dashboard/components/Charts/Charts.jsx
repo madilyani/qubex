@@ -32,25 +32,25 @@ export default function Charts() {
         </div>
         <div className="charts__checks">
           <div className="check">
-            <input type="checkbox" />
+            <input checked type="checkbox" />
             <label htmlFor="">
               Provisioned <span></span>
             </label>
           </div>
           <div className="check">
-            <input type="checkbox" />
+            <input checked type="checkbox" />
             <label htmlFor="">
               Requested <span className="solid"></span>
             </label>
           </div>
           <div className="check">
-            <input type="checkbox" />
+            <input checked type="checkbox" />
             <label htmlFor="">
               Provisioned <span></span>
             </label>
           </div>
           <div className="check">
-            <input type="checkbox" />
+            <input checked type="checkbox" />
             <label htmlFor="">
               Requested <span className="solid"></span>
             </label>

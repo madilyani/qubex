@@ -33,6 +33,7 @@
       background: transparent;
       justify-content: center;
       border-radius: 8px;
+      cursor: pointer;
       overflow: hidden;
       margin-left: 10px;
       img {
@@ -46,6 +47,7 @@
       background: transparent;
       align-items: center;
       justify-content: center;
+      cursor: pointer;
       color: $white;
       svg {
         width: 100%;
