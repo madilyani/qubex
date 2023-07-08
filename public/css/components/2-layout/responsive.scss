@@ -67,7 +67,7 @@
   @include nav-lg-xlg;
   @include sidebar-lg-xlg;
   .wrapper {
-    padding: 64px 0 0 0;
+    padding: 80px 0 0 0;
   }
   // base end
   // dash start
@@ -80,6 +80,10 @@
   // dash start
   @include charts-md-lg;
   // dash end
+  // workload start
+  @include workload-md-lg;
+
+  // workload end
 }
 // 700px
 @include sm-md {
@@ -96,6 +100,10 @@
     line-height: 32px;
   }
   // base end
+  // workload start
+  @include workload-xsm-sm;
+
+  // workload end
 
   // dash start
   @include hard-xsm-sm;
