@@ -1,5 +1,6 @@
 import React from "react";
 import { arrowRight, filterIcon } from "../Base/SVG";
+import { ClusterModul } from "./ClusterModul";
 
 export default function Cluster() {
   return (
@@ -10,22 +11,32 @@ export default function Cluster() {
           <div className="cluster__table">
             <table>
               <thead>
-                <th>
-                  <div className="cluster__table-filter">
-                    Workload {filterIcon}
-                  </div>
-                </th>
-                <th>
-                  <div className="cluster__table-filter">CPU {filterIcon}</div>
-                </th>
-                <th>
-                  <div className="cluster__table-filter">GIB {filterIcon}</div>
-                </th>
-                <th>CPU REQUESTS</th>
-                <th>MEMORY REQUESTS</th>
-                <th>AVAILABLE SAVINGS</th>
+                <tr>
+                  <th>
+                    <div className="cluster__table-filter">
+                      Workload {filterIcon}
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cluster__table-filter">
+                      CPU {filterIcon}
+                    </div>
+                  </th>
+                  <th>
+                    <div className="cluster__table-filter">
+                      GIB {filterIcon}
+                    </div>
+                  </th>
+                  <th>CPU REQUESTS</th>
+                  <th>MEMORY REQUESTS</th>
+                  <th>AVAILABLE SAVINGS</th>
+                </tr>
               </thead>
-              <tbody></tbody>
+              <tbody>
+                {ClusterModul.map((item, index) => {
+                  return <TableRow {...item} key={index} />;
+                })}
+              </tbody>
             </table>
           </div>
         </div>
@@ -40,19 +51,32 @@ const TableRow = (props) => {
         <p>{props.workload}</p>
       </td>
       <td>
-        <div className="cluster__table-cpu">
-          <div className="cluster__table-cpu-text">{props.cpu}</div>
-          <div className="cluster__table-cpu-progress">
-            <span style={{ width: `${props.cpuPerc}` }}></span>
+        <div className="cluster__table-prog">
+          <div className="cluster__table-prog-text">{props.cpu}</div>
+          <div className="cluster__table-prog-progress">
+            <span style={{ width: `${props.cpuPerc}%` }}></span>
           </div>
         </div>
       </td>
       <td>
-        <div className="cluster__table-text">2.90 {arrowRight} <span></span></div>
+        <div className="cluster__table-prog">
+          <div className="cluster__table-prog-text">{props.gib}</div>
+          <div className="cluster__table-prog-progress">
+            <span style={{ width: `${props.gibPerc}%` }}></span>
+          </div>
+        </div>
       </td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>
+        <div className="cluster__table-text">
+          {props.cpuReq1} {arrowRight} <span>{props.cpuReq2}</span>
+        </div>
+      </td>
+      <td>
+        <div className="cluster__table-text">
+          {props.memory1} {arrowRight} <span>{props.memory2}</span>
+        </div>
+      </td>
+      <td>{props.savings}</td>
     </tr>
   );
 };

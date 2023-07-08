@@ -168,7 +168,7 @@ export const chevronLeft = (
 );
 export const filterIcon = (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-    <g clip-path="url(#clip0_1_59)">
+    <g clipPath="url(#clip0_1_59)">
       <path d="M7 11L5 13L3 11" fill="currentColor" />
       <path
         d="M7 11L5 13L3 11"
@@ -211,15 +211,15 @@ export const arrowRight = (
     <path
       d="M9 1L11 3L9 5"
       stroke="#A9A9A9"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path d="M1 3L11 3L1 3Z" fill="url(#paint1_linear_1_145)" />
     <path
       d="M1 3L11 3"
       stroke="#A9A9A9"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <defs>
       <linearGradient
@@ -230,8 +230,8 @@ export const arrowRight = (
         y2="3"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#051922" stop-opacity="0.29" />
-        <stop offset="1" stop-color="#051922" stop-opacity="0" />
+        <stop stopColor="#051922" stopOpacity="0.29" />
+        <stop offset="1" stopColor="#051922" stopOpacity="0" />
       </linearGradient>
       <linearGradient
         id="paint1_linear_1_145"
@@ -241,8 +241,8 @@ export const arrowRight = (
         y2="3.5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop stop-color="#051922" stop-opacity="0.29" />
-        <stop offset="1" stop-color="#051922" stop-opacity="0" />
+        <stop stopColor="#051922" stopOpacity="0.29" />
+        <stop offset="1" stopColor="#051922" stopOpacity="0" />
       </linearGradient>
     </defs>
   </svg>
